@@ -1,12 +1,9 @@
 const diopriaDB = [
   {
     id: "01",
-    name: "Amshar",
-    description: "8672-C8",
-    image: "./image/diopria.jpeg",
-    price: 100,
-    diopria: ["-1", "+1", "+2", "+3"],
-    country: "Украина",
+    name: "Крюк",
+    image: "./image/cru.jpg",
+    price: ["Звичайний 100грн <br /> Великий 150грн <br> Тройний 300грн"],
   },
   {
     id: "01",
@@ -33,17 +30,13 @@ console.log(products);
 console.log(diopriaDB);
 
 const menuMarkup = diopriaDB
-  .map(({ image, name, price, description, diopria, country }) => {
-    return `
-    <div>
+  .map(({ image, name, price }) => {
+    return `<div>
       <li>
         <article class="products-item">
-        <img src="${image}" alt="${name}" width="200px"/>
-        <h4> 👓 модель ${name}</h4>
-        <p> артикул ${description}</p>
-        <p> диоптрии ${diopria}</p>
-        <p> $ ${price} грн</p>
-        <p> Производитель: ${country}</p>
+        <h2>${name}</h2>
+        <img src="${image}" loading="lazy" alt="${name}" width="300px"/>
+        <p> ${price}</p>
         </article>
       </li> 
     </div>`;
