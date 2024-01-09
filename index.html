@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>accessories for tandoor</title>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+
+    <!-- aside -->
+    <section>
+      <nav class="top-nav">
+        <button class="navbar-burger" onclick="toggleMenu()">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M12 26h20v4h-20zM12 14h20v4h-20zM12 2h20v4h-20zM6 0v8h-2v-6h-2v-2zM4 16.438v1.563h4v2h-6v-4.563l4-1.875v-1.563h-4v-2h6v4.563zM8 22v10h-6v-2h4v-2h-4v-2h4v-2h-4v-2z"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="menu">
+          <button class="btn" onclick="toggleMenu()">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <title>close</title>
+              <path
+                fill="#afb1b8"
+                d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"
+              ></path>
+            </svg>
+          </button>
+
+          <nav>
+            <a href="#dioptre" style="animation-delay: 0.2s"> 👓 диоптрия</a>
+            <a href="#photochrom" style="animation-delay: 0.4s"> 👕 фотохром</a>
+            <a href="#sun" style="animation-delay: 0.5s"> 👖 солнцезащитные</a>
+            <a href="#anti" style="animation-delay: 0.6s"> 🥾 антифара </a>
+            <a href="#case" style="animation-delay: 0.7s"> 🧶 чехлы </a>
+          </nav>
+
+        </div>
+
+        <p class="logo-mob">👓</p>
+      </nav>
+    </section>
+
+    <!-- nav -->
+    <header class="header">
+      <a href="" class="logo">Аксесуары к тандыру</a>
+      <nav>
+        <ul class="topmenu">
+          <!-- <li><a href="">Главная</a></li> -->
+          <li>
+            <a href="" class="submenu-link">О нас 🚀</a>
+            <ul class="submenu">
+              <li><a href="">Производство</a></li>
+              <li><a href="">Магазин</a></li>
+              <li><a href="">Сервис</a></li>
+            </ul>
+          </li>
+          <li><a href="#dioptre">Диоптрия</a></li>
+          <li><a href="#photochrom">Фотохром</a></li>
+          <li><a href="#sun">Солнце</a></li>
+          <li><a href="#anti">Антифара</a></li>
+          <li><a href="#case">Чехлы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- telegram form block hero-->
+    <section class="hero">
+      <form id="tg" class="tg">
+        <legend class="hero-title">
+          Отправить заявку <br />
+          на консультацию
+        </legend>
+
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id=""
+            name="name"
+            placeholder="Введите имя"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="tel"
+            class="form-control"
+            id=""
+            name="phone"
+            placeholder="Введите телефон"
+            required
+          />
+        </div>
+
+        <button type="submit" class="hero-btn">Отправить форму</button>
+      </form>
+    </section>
+
+    <!-- дополнительна я информация -->
+
+    <section>
+      <ul class="info">
+        <li><img src="./image/cart.png" alt="cart" width="20px"> Доступные цены </li>
+        <li><img src="./image/checkbox-checked.png" alt="done" width="20px"> Гарантия качества </li>
+        <li> <img src="./image/stopwatch.png" alt="stopwatch" width="20px"> Быстрая обработка заказов </li>
+        <li><img src="./image/bubbles4.png" alt="help" width="20px"> Консультация  </li>
+      </ul>
+    </section>
+
+    <!-- products  -->
+    <section>
+
+      <ul>
+
+      <!-- dioptre -->
+      <li id="dioptre">
+        <h3 class="type-glass">Диоптрийная оптика</h3>
+        <ul class="js-dioptre products"></ul>
+      </li>
+
+      <!-- photochrom -->
+      <li id="photochrom">
+        <h3 class="type-glass">Фотохромная оптика</h3>
+        <ul class="js-photochrom products"></ul>
+      </li>
+
+      <!-- anti -->
+      <li id="anti">
+        <h3 class="type-glass">Анти фара</h3>
+        <ul class="js-anti products"></ul>
+      </li>
+
+      <!-- sunglasses -->
+      <li id="sun">
+        <h3 class="type-glass">Солнцезащитная оптика</h3>
+        <ul class="js-sun products"></ul>
+      </li>
+
+      <!-- case -->
+      <li id="case">
+        <h3 class="type-glass">Чехлы для очков</h3>
+        <ul class="js-case products"></ul>
+      </li>
+      </ul>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-2">
+        <!-- лого,адресс,почта,телефон -->
+        <address>
+          <div class="foot-logo">
+            <a href="./index.html" class="secondary"
+              ><span class="word-web">Оптика</span></a
+            >
+          </div>
+          <ul>
+            <li class="foot-item">
+              <a href="https://goo.gl/maps/RxfCTYUpQu2i5JpL6" class="maps">
+                г.Изюм пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="foot-item">
+              <a href="mailto:info@devstudio.com" class="foot-aut"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="foot-item">
+              <a href="tel:+38 073 07770 92" class="foot-aut"
+                >+38 073 07770 92</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <!-- наши социальные сети -->
+        <!-- <div class="footer-social">
+          <p class="footer-p">присоединяйтесь</p>
+          <ul class="social-link">
+            <li>
+              <a href="" class="a"
+                ><svg class="social-svg">
+                  <use
+                    href="./image/symbol-defs.svg#ic"
+                    width="20"
+                    height="20"
+                    x="10"
+                    y="9"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="" class="a"
+                ><svg class="social-svg">
+                  <use
+                    href="./images/symbol-defs.svg#icon-twitter"
+                    width="20"
+                    height="20"
+                    x="10"
+                    y="8"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="" class="a"
+                ><svg class="social-svg">
+                  <use
+                    href="./images/symbol-defs.svg#icon-facebook"
+                    width="20"
+                    height="20"
+                    x="10"
+                    y="8"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="" class="a"
+                ><svg class="social-svg">
+                  <use
+                    href="./images/symbol-defs.svg#icon-linkedin"
+                    width="20"
+                    height="20"
+                    x="10"
+                    y="8"
+                  ></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div> -->
+        <!-- подписка -->
+
+        <div class="wrapper-send">
+          <p>Подпишись на рассылку</p>
+          <form name="signup_form" autocomplete="on" novalidate>
+            <label>
+              <input type="email" name="email" placeholder="post@mail.com" />
+            </label>
+
+            <button type="submit">
+              Подписатся
+
+              <!-- <svg class="svg-send">
+                <use
+                  href="./images/symbol-defs.svg#icon-red-send"
+                  width="18"
+                  height="18"
+                  x="10"
+                  y="8"
+                ></use> -->
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- cdn axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- telegram form -->
+    <script>
+      const TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw";
+      const CHAT_ID = "-1001863675273";
+      const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+      const tg = document.getElementById("tg");
+
+      tg.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let message = `<b> Заявка с сайта! </b>\n`;
+        message += `<b> Отравитель:</b> ${this.name.value}\n`;
+        message += `<b> Телефон:</b> ${this.phone.value}\n`;
+
+        console.log(message);
+
+        axios
+          .post(URL, {
+            chat_id: CHAT_ID,
+            parse_mode: "html",
+            text: message,
+          })
+          .then(alert("Ваша заявка принята"));
+        // .catch(alert("Извините что то пошло не так"))
+
+        tg.name.value = "";
+        tg.phone.value = "";
+      });
+    </script>
+
+    <!-- aside -->
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+
+    <script src="./diopria.js" type="module"></script>
+    <script type="module" src="./photochrom.js"></script>
+    <script type="module" src="./anti.js"></script>
+    <script type="module" src="./sun.js"></script>
+    <script type="module" src="./case.js"></script>
+
+  </body>
+</html>
