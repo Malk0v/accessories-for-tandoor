@@ -30,11 +30,6 @@ button:hover {
   background-color: #286090;
 }
 
-#logo {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
 #modal {
   display: none;
   position: fixed;
@@ -66,10 +61,12 @@ button:hover {
   outline: 1px solid rgb(185, 145, 145);
   background-color: #3379b774;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 #close-modal:hover {
   padding: 7px;
   outline: 1px solid rgb(202, 77, 77);
   background-color: #3379b7c9;
+  transition: 0.3s ease-in-out;
 }

@@ -11,14 +11,57 @@ ul {
 }
 /* стили для корзины и все что с ней связано  */
 
+.nav div {
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+}
+
 #container {
-  background-color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1500px;
+  background-color: #f9f9f900;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  display: flex;
+  outline: 1px dashed pink;
+  justify-content: space-between;
+  border-radius: 0px 0px 10px 10px;
+  background-image: url(./img/1648098066_4-gamerwall-pro-p-trendovie-foni-krasivie-5.png);
+}
+
+#logo {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.title {
+  margin: 14px;
+}
+
+.navbar-burger {
+  background-color: inherit;
+  margin-left: 10%;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-burger:hover {
+  background-color: rgba(245, 245, 245, 0.42);
+  transition: 0.3s ease-in-out;
 }
 
 .accessories {
+  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .product-card {
@@ -28,6 +71,7 @@ ul {
   padding: 10px;
   outline: 1px solid rgb(230, 225, 225);
   border-radius: 10px;
+  background-color: #fff;
   box-shadow: rgb(225, 221, 221) 5px 5px 15px;
 }
 

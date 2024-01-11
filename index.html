@@ -10,23 +10,63 @@
   </head>
   <body>
 
-    <div id="logo" onclick="openModal()">
-      <!-- Ваш логотип здесь -->
-      <img src="./img/cart.png" alt="Логотип" />
-    </div>
-
-    <div id="container">
-      <ul class="accessories" id="accessories">
-
-        <li class="product-card"
+    <nav class="nav">
+      <div>
+        <button class="navbar-burger" onclick="toggleMenu()">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
           >
+            <path
+              d="M12 26h20v4h-20zM12 14h20v4h-20zM12 2h20v4h-20zM6 0v8h-2v-6h-2v-2zM4 16.438v1.563h4v2h-6v-4.563l4-1.875v-1.563h-4v-2h6v4.563zM8 22v10h-6v-2h4v-2h-4v-2h4v-2h-4v-2z"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- <button class="btn" onclick="toggleMenu()">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <title>close</title>
+              <path
+                fill="#afb1b8"
+                d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"
+              ></path>
+            </svg>
+        </button> -->
+
+        <div class="title">accessory for tandoor</div>
+      </div>
+
+        <div>
+          <div id="search" onclick="openModal()">
+          <img src="./img/stopwatch.png" alt="поиск"/></div>
+
+          <div id="logo" onclick="openModal()">
+          <img src="./img/cart.png" alt="Логотип"/></div>
+    </nav>
+        </div>
+    
+
+    <section>
+      <div id="container">
+        <ul class="accessories" id="accessories">
+
+          <li class="product-card">
             <h2>Test</h2> <br />
-            <img src="style.css" loading="lazy" alt="" width="300px" height="300px">
+            <img src="./img/podstavkakazan.jpg" loading="lazy" alt="" width="300px" height="300px">
             <p class="description">Розмір вказаний за діаметром сковорідки, фактичний діаметр виробу на 2см більший!<p/>
             <br>
             <span class="sizes">Діаметр виробу:</span>  
-         <div class="wrapperinput">
-           <select class="input" id="size1">
+          <div class="wrapperinput">
+            <select class="input" id="size1">
               <option value="S">12sm price 777ye</option>
               <option value="M">24sm price 777ye</option>
               <option value="L">36sm price 777ye</option>
@@ -34,11 +74,13 @@
             <button (1, 'Товар 1', 'size1')">
               <img class="cartImg" src="./img/cart.png" alt="">
             </button>
-         </div>
+          </div>
           </li>
-      </ul> 
-      </dv>
-    </div>
+        </ul> 
+      </div>
+    </section>
+
+    
 
     <div id="modal">
       <div id="modal-content">
