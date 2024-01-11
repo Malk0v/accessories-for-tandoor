@@ -11,7 +11,7 @@ const cart = {
   addItem: function (id, name, sizeId) {
     const productElement = document.querySelector(`[data-id="${id}"]`);
     const selectedSize = document.getElementById(sizeId).value;
-    alert("Добaвили товар в корзину");
+    alert(`${selectedSize} додано до кошика`);
     const price = JSON.parse(productElement.getAttribute("data-sizes"))[
       selectedSize
     ];
