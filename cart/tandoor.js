@@ -5,7 +5,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "./ img /pticha.jpg",
+    images: "./img/pticha.jpg",
     sizes: [
       {
         size: "20см ціна 1200грн",
