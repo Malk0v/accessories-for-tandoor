@@ -1,5 +1,8 @@
 // Весь ваш JavaScript-код здесь
-console.log("hello its cart");
+// console.log("hello its cart");
+// import Notify from "../notifix/dist/notiflix-notify-aio-3.2.7";
+// console.log(Notify());
+// Notify.success("Sol lucet omnibus");
 // Объект корзины
 const cart = {
   items: [],
@@ -8,6 +11,7 @@ const cart = {
   addItem: function (id, name, sizeId) {
     const productElement = document.querySelector(`[data-id="${id}"]`);
     const selectedSize = document.getElementById(sizeId).value;
+    alert("Добaвили товар в корзину");
     const price = JSON.parse(productElement.getAttribute("data-sizes"))[
       selectedSize
     ];
