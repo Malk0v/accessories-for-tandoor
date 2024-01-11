@@ -150,13 +150,13 @@ function renderModalCart() {
   modalCartItemsElement.innerHTML = "";
 
   cart.items.forEach((item) => {
-    const li = document.createElement("li");
-    li.textContent = `${item.name} - Размер: ${
-      item.size
-    } - Цена: ${item.price.toFixed(2)} - Количество: ${item.quantity}`;
-    modalCartItemsElement.appendChild(li);
+    // const li = document.createElement("li");
+    // li.textContent = `${item.name} - Размер: ${
+    //   item.size
+    // } - Цена: ${item.price.toFixed(2)} - Количество: ${item.quantity}`;
+    // modalCartItemsElement.appendChild(li);
   });
 
-  const modalTotalElement = document.getElementById("modal-total");
-  modalTotalElement.textContent = `Итого: ${cart.total.toFixed(2)}`;
+  // const modalTotalElement = document.getElementById("modal-total");
+  // modalTotalElement.textContent = `Итого: ${cart.total.toFixed(2)}`;
 }

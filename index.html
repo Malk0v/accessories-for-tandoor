@@ -9,15 +9,12 @@
     <script src="./cart/script.js"></script>
   </head>
   <body>
-      <div id="cart">
-        <h2>Корзина</h2>
-        <ul id="cart-items"></ul>
-        <p id="total">Итого: $0.00</p>
-        <button onclick="clearCart()">Очистить корзину</button>
-        <button onclick="saveCart()">Сохранить корзину</button>
-      </div class="accessory">
-      <div>
-      <h2>Товары</h2>
+
+    <div id="logo" onclick="openModal()">
+      <!-- Ваш логотип здесь -->
+      <img src="../img/cart.png" alt="Логотип" />
+    </div>
+
     <div id="container">
       <ul class="accessories" id="accessories">
 
@@ -43,17 +40,20 @@
       </dv>
     </div>
 
-    <div id="logo" onclick="openModal()">
-      <!-- Ваш логотип здесь -->
-      <img src="../img/cart.png" alt="Логотип" />
-    </div>
-
     <div id="modal">
       <div id="modal-content">
         <span id="close-modal" onclick="closeModal()">X</span>
+
+        <div id="cart">
         <h2>Корзина</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Итого: $0.00</p>
+        <button onclick="clearCart()">Очистить корзину</button>
+        <button onclick="saveCart()">Сохранить корзину</button>
+      </div> 
+        <!-- <h2>Корзина</h2> -->
         <ul id="modal-cart-items"></ul>
-        <p id="modal-total">Итого: $0.00</p>
+        <p id="modal-total"></p>
       </div>
     </div>
 
