@@ -12,7 +12,7 @@ const accessoryDB = [
         price: "1200",
       },
       {
-        size: "23 см ціна 1400грн",
+        size: "23см ціна 1400грн",
         price: "1400",
       },
       {
@@ -59,7 +59,7 @@ const accessoryDB = [
         price: "1200",
       },
       {
-        size: "23 см ціна 1400грн",
+        size: "23см ціна 1400грн",
         price: "1400",
       },
       {
@@ -556,7 +556,7 @@ const menuMarkup = accessoryDB
               <option value="${sizes[8].size}">${sizes[8].size}</option>
             </select>
             <button onclick="addToCart(${productId}, '${productName}', '${productId}')">
-              <img class="cartImg" src="../img/cart.png" alt="Логотип" />
+              <img class="cartImg" src="./img/cart.png" alt="Логотип" />
             </button>
             </div>
           </li>
