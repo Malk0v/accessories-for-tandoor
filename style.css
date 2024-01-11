@@ -65,7 +65,8 @@ ul {
 
 .sizes {
   display: block;
-  text-align: center;
+  margin-left: 12px;
+  text-align: start;
   font-size: 20px;
   color: rgba(43, 40, 40, 0.619);
 }

@@ -5,7 +5,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/pticha.jpg",
+    images: "./ img /pticha.jpg",
     sizes: [
       {
         size: "20см ціна 1200грн",
@@ -99,7 +99,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/sha.jpg",
+    images: "./img/sha.jpg",
     sizes: [
       {
         size: "20см ціна 1300грн",
@@ -146,7 +146,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/4in1.jpg",
+    images: "./img/4in1.jpg",
     sizes: [
       {
         size: "20см ціна 1200грн",
@@ -193,7 +193,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/2x.jpg",
+    images: "./img/2x.jpg",
     sizes: [
       {
         size: "20см ціна 800грн",
@@ -240,7 +240,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/3x.jpg",
+    images: "./img/3x.jpg",
     sizes: [
       {
         size: "20см ціна 1200грн",
@@ -287,7 +287,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/s2xi.jpg",
+    images: "./img/s2xi.jpg",
     sizes: [
       {
         size: "20см ціна 1400грн",
@@ -334,7 +334,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/s3xi.jpg",
+    images: "./img/s3xi.jpg",
     sizes: [
       {
         size: "20см ціна 1400грн",
@@ -381,7 +381,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/s2xiii.jpg",
+    images: "./img/s2xiii.jpg",
     sizes: [
       {
         size: "20см ціна 1500грн",
@@ -428,7 +428,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/pticha.jpg",
+    images: "./img/pticha.jpg",
     sizes: [
       {
         size: "20см ціна 2000грн",
@@ -475,7 +475,7 @@ const accessoryDB = [
     description:
       "Розмір вказаний за діаметром сковорідки,фактичний діаметр виробу на 2см більший!",
     category: "Нержавійка",
-    images: "../img/patelnia.jpg",
+    images: "./img/patelnia.jpg",
     sizes: [
       {
         size: "20см ціна 350грн",
