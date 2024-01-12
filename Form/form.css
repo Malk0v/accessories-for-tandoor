@@ -1,0 +1,98 @@
+.hero {
+  max-width: 1500px;
+  margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 80%;
+
+  background: linear-gradient(
+        105deg,
+        rgba(171, 120, 219, 0.711) 39%,
+        rgb(23, 44, 48) 96%
+      )
+      top center / 400px 200px no-repeat,
+    url(../img/1648098066_4-gamerwall-pro-p-trendovie-foni-krasivie-5.png)
+      center no-repeat,
+    rgb(58, 38, 79);
+
+  /* background-color: #1a0827;
+  background-image: url("https://cdn.pixabay.com/photo/2015/01/31/05/05/background-618226_960_720.png"); */
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+}
+
+.hero-btn {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+
+  background-color: #404040;
+  color: #f7f7f7;
+}
+
+.hero-btn:hover {
+  margin: 11px;
+  padding: 9px;
+  border-radius: 6px;
+
+  background-color: #313131;
+  color: #f9f3f3;
+}
+
+.tg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  padding: 15px;
+  font-size: 40px;
+}
+
+.form-group {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 20px;
+}
+
+.form-control {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border-color: #6e7a8471;
+  background-color: #efe8f8e0;
+}
+
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+
+  /* outline: 1px solid red; */
+}
+
+.info > li {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  color: #44285e;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 50px 1px rgba(128, 128, 128, 0.434);
+  font-style: italic;
+}

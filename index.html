@@ -6,7 +6,10 @@
     <title>Интернет-магазин</title>
     <link rel="stylesheet" href="./style.css"/>
     <link rel="stylesheet" href="./cart/cart.css"/>
+    <link rel="stylesheet" href="./Form/form.css">
     <script src="./cart/script.js"></script>
+    <script src="./Form/form.js"></script>
+
   </head>
   <body>
 
@@ -55,6 +58,51 @@
         </div>
     
 
+        <!-- telegram form block hero-->
+    <section class="hero">
+      <form id="tg" class="tg">
+        <legend class="hero-title">
+          Отправить заявку <br />
+          на консультацию
+        </legend>
+
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id=""
+            name="name"
+            placeholder="Введите имя"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="tel"
+            class="form-control"
+            id=""
+            name="phone"
+            placeholder="Введите телефон"
+            required
+          />
+        </div>
+
+        <button type="submit" class="hero-btn">Отправить форму</button>
+      </form>
+    </section>
+
+    <!-- дополнительна я информация -->
+
+    <section>
+      <ul class="info">
+        <li><img src="./img/cart.png" alt="cart" width="20px"> Доступные цены </li>
+        <li><img src="./img/checkbox-checked.png" alt="done" width="20px"> Гарантия качества </li>
+        <li> <img src="./img/stopwatch.png" alt="stopwatch" width="20px"> Быстрая обработка заказов </li>
+        <li><img src="./img/bubbles4.png" alt="help" width="20px"> Консультация  </li>
+      </ul>
+    </section>
+
     <section>
       <div id="container">
         <ul class="accessories" id="accessories">
@@ -101,5 +149,37 @@
 
   </body>
   <script src="./cart/tandoor.js" type="module"></script>
+  <!-- cdn axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Form/form.js"></script>
 
+<script>
+  const TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw";
+const CHAT_ID = "-1001863675273";
+const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+const tg = document.getElementById("tg");
+console.log(tg);
+tg.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let message = `<b> Запрос с сайта аксусуаров к тандыру! </b>\n`;
+  message += `<b> Отравитель:</b> ${this.name.value}\n`;
+  message += `<b> Телефон:</b> ${this.phone.value}\n`;
+
+  console.log(message);
+
+  axios
+    .post(URL, {
+      chat_id: CHAT_ID,
+      parse_mode: "html",
+      text: message,
+    })
+    .then(alert("Ваша заявка принята"));
+  // .catch(alert("Извините что то пошло не так"))
+
+  tg.name.value = "";
+  tg.phone.value = "";
+});
+</script> 
 </html>

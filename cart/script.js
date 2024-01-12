@@ -1,9 +1,3 @@
-// Весь ваш JavaScript-код здесь
-// console.log("hello its cart");
-// import Notify from "../notifix/dist/notiflix-notify-aio-3.2.7";
-// console.log(Notify());
-// Notify.success("Sol lucet omnibus");
-// Объект корзины
 const cart = {
   items: [],
 

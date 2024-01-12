@@ -30,7 +30,6 @@ ul {
   top: 0;
   width: 100%;
   display: flex;
-  outline: 1px dashed pink;
   justify-content: space-between;
   border-radius: 0px 0px 10px 10px;
   background-image: url(./img/1648098066_4-gamerwall-pro-p-trendovie-foni-krasivie-5.png);
@@ -58,7 +57,7 @@ ul {
 }
 
 .accessories {
-  margin-top: 90px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
