@@ -38,6 +38,14 @@ ul {
 #logo {
   cursor: pointer;
   margin: 10px;
+  transition: 0.3s ease-in-out;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#logo:hover {
+  background-color: rgba(245, 245, 245, 0.42);
+  transition: 0.3s ease-in-out;
 }
 
 .title {
