@@ -80,6 +80,21 @@ ul {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: rgb(225, 221, 221) 5px 5px 15px;
+
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 75px);
+  transition: 0.5s;
+}
+
+.description {
+  display: inline;
+  font-size: 10px;
+  color: rgba(84, 80, 80, 0.619);
+}
+
+.cartImg {
+  background-color: #fff;
+  padding: 7px;
 }
 
 .product-card h2 {
@@ -97,12 +112,6 @@ ul {
 .product-card p {
   margin: 0;
   padding: 0;
-}
-
-.description {
-  display: inline;
-  font-size: 10px;
-  color: rgba(84, 80, 80, 0.619);
 }
 
 .wrapperinput {

@@ -5,7 +5,8 @@ const cart = {
   addItem: function (id, name, sizeId) {
     const productElement = document.querySelector(`[data-id="${id}"]`);
     const selectedSize = document.getElementById(sizeId).value;
-    alert(`${selectedSize} додано до кошика`);
+    alert(`${name} додано до кошика`);
+    console.log(name, selectedSize);
     const price = JSON.parse(productElement.getAttribute("data-sizes"))[
       selectedSize
     ];
@@ -157,4 +158,31 @@ function renderModalCart() {
 
   // const modalTotalElement = document.getElementById("modal-total");
   // modalTotalElement.textContent = `Итого: ${cart.total.toFixed(2)}`;
+}
+
+// Функция для отправки заказа при нажатии кнопки "Отправить заказ"
+function fetchCartToTg(id, name, sizeId) {
+  // const TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw";
+  // const CHAT_ID = "-1001863675273";
+  // const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+  const fetchTg = document.getElementById("fetchTg");
+  console.log(fetchTg);
+  fetchTg.addEventListener("submit", function (e) {
+    console.log(1);
+    e.preventDefault();
+
+    console.log(1);
+    let message = `<b> Запрос с сайта аксусуаров к тандыру! </b>\n`;
+    message += `<b> Отравитель:</b> ${this.name.value}\n`;
+    message += `<b> Телефон:</b> ${this.phone.value}\n`;
+    message += `<b> ID товара:</b> ${id}\n`;
+    message += `<b> Название:</b> ${name}\n`;
+    message += `<b> Размер:</b> ${sizeId}\n`;
+    message += `<b> Общая сумма заказа:</b> ${calculateTotal()}\n`;
+
+    console.log(message);
+  });
+
+  // cart.addItem(id, name, sizeId);
 }

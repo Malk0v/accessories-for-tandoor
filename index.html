@@ -96,9 +96,9 @@
 
     <section>
       <ul class="info">
-        <li><img src="./img/bubbles4.png" alt="help" width="20px"> Консультация  </li>
-        <li><img src="./img/checkbox-checked.png" alt="done" width="20px"> Гарантия качества </li>
-        <li> <img src="./img/stopwatch.png" alt="stopwatch" width="20px"> Быстрая обработка заказов </li>
+        <li><img src="./img/bubbles4.png" alt="help" width="30px" height="30px"> Консультация  </li>
+        <li><img src="./img/checkbox-checked.png" alt="done" width="30px" height="30px"> Гарантия качества </li>
+        <li> <img src="./img/stopwatch.png" alt="stopwatch" width="30px" height="30px"> Быстрая обработка заказов </li>
       </ul>
     </section>
 
@@ -135,10 +135,43 @@
 
         <div id="cart">
         <h2>Корзина</h2>
+
+        <section>
+      <form id="fetchTg2">
+        <legend>
+
+        </legend>
+
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id=""
+            name="name"
+            placeholder="Введите имя"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="tel"
+            class="form-control"
+            id=""
+            name="phone"
+            placeholder="Введите телефон"
+            required
+          />
+        </div>
+
+      </form>
+    </section>
+
         <ul id="cart-items"></ul>
         <p id="total">Итого: $0.00</p>
         <button onclick="clearCart()">Очистить корзину</button>
         <button onclick="saveCart()">Сохранить корзину</button>
+        <button id="fetchTg" onclick="fetchCartToTg()">Отправить заказ</button>
       </div> 
         <!-- <h2>Корзина</h2> -->
         <ul id="modal-cart-items"></ul>
@@ -168,17 +201,19 @@ tg.addEventListener("submit", function (e) {
 
   console.log(message);
 
-  axios
-    .post(URL, {
-      chat_id: CHAT_ID,
-      parse_mode: "html",
-      text: message,
-    })
-    .then(alert("Ваша заявка принята"));
+  // axios
+  //   .post(URL, {
+  //     chat_id: CHAT_ID,
+  //     parse_mode: "html",
+  //     text: message,
+  //   })
+  //   .then(alert("Ваша заявка принята"));
   // .catch(alert("Извините что то пошло не так"))
 
   tg.name.value = "";
   tg.phone.value = "";
 });
 </script> 
+
+<script type="module" src="./cart/script.js"></script>
 </html>

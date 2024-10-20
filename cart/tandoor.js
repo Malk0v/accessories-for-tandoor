@@ -542,7 +542,7 @@ const menuMarkup = accessoryDB
             <img src="${images}" loading="lazy" alt="${productName}" width="300px" height="300px">
             <p class="description">${description}<p/>
             <br>
-            <span class="sizes">Діаметр виробу:</span> 
+            <span class="sizes">Діаметр виробу:</span>
             <div class="wrapperinput">
             <select class="input" id="${productId}">
               <option value="${sizes[0].size}">${sizes[0].size}</option>
@@ -573,3 +573,5 @@ const accessories = (accessoryDB) => {
 };
 
 access.insertAdjacentHTML("beforeend", menuMarkup);
+
+//  на всякий случай
